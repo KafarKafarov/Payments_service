@@ -27,7 +27,7 @@ class PaymentGateway:
         )
         await asyncio.sleep(delay)
         status = (
-            PaymentStatus.SUCCESS
+            PaymentStatus.SUCCEEDED
             if random.random() < 0.9
             else PaymentStatus.FAILED
         )

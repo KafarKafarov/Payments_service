@@ -8,6 +8,6 @@ class Currency(str, Enum):
 
 
 class PaymentStatus(str, Enum):
-    PENDING = 'PENDING'
-    SUCCESS = 'SUCCESS'
-    FAILED = 'FAILED'
+    PENDING = 'pending'
+    SUCCEEDED = 'succeeded'
+    FAILED = 'failed'

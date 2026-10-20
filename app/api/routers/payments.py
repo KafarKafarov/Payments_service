@@ -34,6 +34,7 @@ def to_detail(payment: Payment) -> PaymentDetail:
         description=payment.description,
         metadata=payment.metadata_,
         status=payment.status,
+        idempotency_key=payment.idempotency_key,
         webhook_url=payment.webhook_url,
         created_at=payment.created_at,
         processed_at=payment.processed_at,
